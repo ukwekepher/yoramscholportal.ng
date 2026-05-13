@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report slip portal</title>
+    <link rel="stylesheet" href="style/reportsheet portal.css">
+  </head>
+  <body>
+    <div class="container">
+      <a href="yoram.html" class="back-btn">Back to Home</a>
+            <div class="payment-box">
+        <h2>Payment Instruction</h2>
+
+        <p>
+          Please transfer the sum of two thousand Naira &#40;&#8358;2,000
+          NGN&#41; to the following account:
+        </p>
+
+        <p><strong>Bank Name:</strong> FIRST BANK</p>
+        <p><strong>Account Name:</strong> IDOWU SHOLAPE </p>
+        <p><strong>Account Number:</strong>311-3070-599  </p>
+
+        <p class="note">
+          After payment, send the screenshot to WhatsApp: 70-717-5080. A
+          result code will be sent after confirmation.
+        </p>
+      </div>
+
+      <hr />
+
+      <div class="checker-box">
+        <h3>Check Your Result</h3>
+
+        <p>Enter your result code below:</p>
+
+        <input type="text" id="code" placeholder="Enter your result code" />
+        <button onclick="checkResult()">Check Result</button>
+      
+      </div>
+    </div>
+
+    <script>
+const results = {
+  "TGWIM025901415UR001": "basic001.html",
+  "TGWIM02523E112TH002": "basic002.html",
+  "TGWIM02516R914CE004": "basic003.html",
+  "TGEDOSI02516R914CE001":"basic004.html",
+  "TGVIADS02516R914CE002": "basic005.html",
+  "TGDAALF02516R914CE003": "basic006.html",
+  "TGALEMO02516R914CE004": "basic007.html",
+  "TGISADB02516R914CE005": "basic008.html",
+  "TGROME02516R914CE006": "basic009.html",
+  "TGPRINC02516R914CE007": "basic010.html",
+  "TGPRIU02515R914CE008": "basic014.html",
+  "TGAEW7N1B64R2CE389":"basic011.html",
+  "TGAKD3H8M29R5CE204":"baic012.html",
+  "TGATW9H2M51R8CE117": " basic013.html",
+  "TGNF5S2A81R9CE462": "basic015.html",
+  "TGOTG6L3B92R4CE538":"basic016.html",
+  "TGOWD2B7F15R8CE601":"basic017.html",
+  "TGCPR8M4E73R6CE745":"basic018.html",
+   "TGEFA1M9N52R7CE823":"basic019.html",
+   "TGATF6D2O38R5CE914":"baic020.html",
+   "TGDTM9S1O47R3CE999":"nurs001.html",
+   "TGETM9S4O47R3CE905":"nursery002.html",
+   "TGETM98S506R3CE906":" nursery003.html",
+   "TGETM99S506R3CE976":" nursery004.html",
+   "TGETk98S806R9CE906":" nursery005.html",
+   "TGESM98S506R3CE9010":" nursery006.html",
+   "TGETM97S506R3CA906":"nursery009.html",
+   "TGJTM98S506J3CE9011":"nursery010.html",
+   "TGETM981106R3CG906":"nursery011.html",
+   "TGETM98S506R3CE906":"pre-school001.html",
+   "TGETM98P506Q3CE900":"pre-school002.html",
+   "TGWFM28S506R4CE980":"pre-school004.html",
+   "TGEFTM98S506RS3CE906":"preschool005.html",
+   
+}; 
+
+function checkResult() {
+  let code = document.getElementById("code").value.trim();
+
+  if (results[code]) {
+    window.location.href = results[code];
+  } else {
+    alert("Invalid code or payment not confirmed");
+  }
+}
+</script>
+    </div>
+  </body>
+</html>

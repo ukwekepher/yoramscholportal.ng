@@ -1,0 +1,89 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#0b1f3a;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px;
+}
+
+/* Background */
+.background{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ),
+  url("../data/school.jpg");
+
+  background-size:cover;
+  background-position:center;
+  z-index:-1;
+}
+
+/* Logo */
+.logo{
+  width:120px;
+  margin-top:20px;
+  margin-bottom:30px;
+}
+
+/* Menu Box */
+.menu{
+  width:100%;
+  max-width:400px;
+
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+/* Links */
+.menu a{
+  text-decoration:none;
+  color:white;
+  background:rgba(255,255,255,0.15);
+
+  padding:15px;
+  text-align:center;
+
+  border-radius:10px;
+
+  font-size:18px;
+  font-weight:bold;
+
+  backdrop-filter:blur(5px);
+
+  transition:0.3s;
+}
+
+/* Hover */
+.menu a:hover{
+  background:white;
+  color:#0b1f3a;
+}
+
+/* Mobile */
+@media(max-width:600px){
+
+  .logo{
+    width:90px;
+  }
+
+  .menu a{
+    font-size:16px;
+    padding:12px;
+  }
+
+}
